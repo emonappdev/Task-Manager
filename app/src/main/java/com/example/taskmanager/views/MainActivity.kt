@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity(), UserAdapter.HandleUserClick {
 
     override fun onDeleteClick(user: User) {
         dao.deleteUser(user)
-        Toast.makeText(this@MainActivity, "${user.title} has been deleted!! ", Toast.LENGTH_LONG).show()
+        Toast.makeText(this@MainActivity, "${user.title} Has Been Deleted", Toast.LENGTH_LONG).show()
         setUserData()
     }
 

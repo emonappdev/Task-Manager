@@ -7,8 +7,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".views.AddUserActivity"
-    >
+    tools:context=".views.AddUserActivity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -138,18 +137,17 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSaveTask"
+            style="@android:style/Widget.Button"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="24dp"
             android:background="@drawable/button_background"
-            style="@android:style/Widget.Button"
             android:backgroundTint="#1AA260"
+            android:fontFamily="@font/acme"
             android:text="Save    Task"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:fontFamily="@font/acme"
-            />
+            android:textStyle="bold" />
 
     </LinearLayout>
 

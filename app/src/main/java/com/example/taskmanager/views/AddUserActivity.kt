@@ -68,7 +68,7 @@ class AddUserActivity : AppCompatActivity() {
                     etTaskTitle.setText(it.title)
                     etTaskDescription.setText(it.description)
                     etDueDate.setText(it.date)
-                    switchStatus.setText(it.isCompleted.toString())
+                    switchStatus.setText(it.Completed.toString())
                     userId = it.id
                 }
             }
@@ -87,9 +87,9 @@ class AddUserActivity : AppCompatActivity() {
 
             val date = DatePickerDialog(
                 this,
-                { _, selectedYear, selectedMonth, selectedDay ->
-                    val selectedDate = "$selectedDay/${selectedMonth + 1}/$selectedYear"
-                    binding.etDueDate.setText(selectedDate)
+                { _, Year, Month, Day ->
+                    val Date = "$Day/${Month + 1}/$Year"
+                    binding.etDueDate.setText(Date)
                 },
                 year, month, day
             )

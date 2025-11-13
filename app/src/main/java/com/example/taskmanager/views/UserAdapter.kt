@@ -34,11 +34,11 @@ class UserAdapter(
                 tvTitle.text = " ${user.title}"
                 tvDescription.text = " ${user.description}"
                 tvDate.text = " ${user.date}"
-                tvStatus.text = " ${user.isCompleted}"
+                tvStatus.text = " ${user.Completed}"
 
 
 
-                if (user.isCompleted) {
+                if (user.Completed) {
                     tvStatus.text = "Task Completed"
                     tvStatus.setTextColor(Color.parseColor("#4CAF50"))
                 } else {
@@ -62,9 +62,6 @@ class UserAdapter(
     }
 
     override fun getItemCount(): Int = userList.size
-
-
-
 
 
     class userVH(val binding: ItemUserBinding) : RecyclerView.ViewHolder(binding.root)

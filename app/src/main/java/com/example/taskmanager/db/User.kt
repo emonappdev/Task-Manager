@@ -13,5 +13,5 @@ data class User(
     val title: String,
     val description: String,
     val date: String,
-    val isCompleted: Boolean
+    val Completed: Boolean
 ) : Parcelable
