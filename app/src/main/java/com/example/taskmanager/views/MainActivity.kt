@@ -69,4 +69,14 @@ class MainActivity : AppCompatActivity(), UserAdapter.HandleUserClick {
 
 
 
+    override fun onResume() {
+        super.onResume()
+        val allUser = dao.getAllUser()
+
+
+        userAdapter.clearAll()
+        allUser.forEach { userAdapter.addItem(it) }
+    }
+
+
 }
